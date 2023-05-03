@@ -30,7 +30,7 @@
             <?php
             if (isset($_SESSION['admin'])) {
                 ?>
-                <li><a href="admin.php">admin panal</a></li>
+                <!-- <li><a href="admin.php">admin panel</a></li> -->
                 <li><a href="logic/login.php?logout=yes">logout</a></li>
             <?php
             }

@@ -26,13 +26,13 @@
   <h2><center>POST</center></h2>
   <form method="post" action="logic/insert.php">
   <label for="fname">Title</label>
-  <input type="text" name="title" placeholder="😁😁😁">
+  <input type="text" name="title" placeholder="title">
 
   <label for="lname">Image</label>
-  <input type="text" id="lname" name="image" placeholder="📁📁📁">
+  <input type="text" id="lname" name="image" placeholder="image">
 
-  <label for="subject">price</label>
-  <input type="text" id="lname" name="price" placeholder="₹🛒🛒🛒">
+  <label for="subject">Price</label>
+  <input type="text" id="lname" name="price" placeholder="price">
 
   <input type="submit" name="newpro" value="Submit">
   </form>

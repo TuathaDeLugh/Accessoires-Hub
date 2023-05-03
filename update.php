@@ -9,7 +9,7 @@
 <body>
 <?php 
           include('components/header.php');
-          
+          include("database/db.php");
           ?>
           </div>
 </div>
@@ -25,17 +25,20 @@
 <div class="container">
     <?php
     $id=$_GET['id'];
+    $q = "SELECT * FROM products WHERE id = $id";
+    $res = mysqli_query($con, $q);
+    $row = mysqli_fetch_assoc($res);
     ?>
   <h2><center>POST</center></h2>
   <form method="post" action="logic/update.php">
   <label for="fname">Title</label>
-  <input type="text" name="title" placeholder="😁😁😁">
+  <input type="text" name="title" placeholder="title" value="<?php echo $row['title'] ?>">
 
   <label for="lname">Image</label>
-  <input type="text" id="lname" name="image" placeholder="📁📁📁">
+  <input type="text" id="lname" name="image" placeholder="image" value="<?php echo $row['image'] ?>">
 
-  <label for="subject">price</label>
-  <input type="text" id="lname" name="price" placeholder="₹🛒🛒🛒">
+  <label for="subject">Price</label>
+  <input type="text" id="lname" name="price" placeholder="price" value="<?php echo $row['price'] ?>">
   <input type="hidden" id="lname" name="id" value="<?php echo $id ?>">
   <input type="submit" value="Submit" name="updatepro">
   </form>

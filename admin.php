@@ -53,10 +53,10 @@
                      <?php echo $result['price']; ?>
                  </td>
                  <td>
-                     <button class="btn success"><a href="update.php?id=<?php echo $result['id']?>">UPDATE</a></button>
+                     <a href="update.php?id=<?php echo $result['id']?>"><button class="btn success">UPDATE</button></a>
                  </td>
                  <td>
-                     <button class="btn danger"><a href="logic/update.php?deletepro=<?php echo $result['id']?>">DELETE</a></button>
+                     <a href="logic/update.php?deletepro=<?php echo $result['id']?>"><button class="btn danger">DELETE</button></a>
                  </td>
          </tr>
          <?php

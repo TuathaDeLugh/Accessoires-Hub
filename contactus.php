@@ -30,7 +30,7 @@
             <th>id</th>
             <th>firstname</th>
             <th>lastname</th>
-            <th>subject <button class="btn danger"><a href="logic/update.php?deletecu=deletekar">DELETE ALL</a></button> </th>
+            <th>subject </th><th><a href="logic/update.php?deletecu=deletekar"><button class="btn danger">DELETE ALL</button></a> </th>
         </tr>
         <?php
         include('database/db.php');
